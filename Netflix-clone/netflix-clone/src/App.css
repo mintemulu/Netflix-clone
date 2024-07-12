@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;  /* Prevent horizontal scroll */
+}
+
+/* App Container */
+.App {
+  padding: 20px;
+}
+
+/* Additional styling for rows to ensure they are spaced out nicely */
+.row {
+  margin-bottom: 30px;
+}
+
+/* Ensure that the title aligns nicely with the row */
+.row__title {
+  margin-left: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for larger posters to stand out */
+.row__posterLarge {
+  max-height: 350px;
+  transition: transform 450ms;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+}
+
+/* Header Styles */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo in header */
+.header__logo {
+  width: 80px;
+  object-fit: contain;
+}
+
+/* Avatar in header */
+.header__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+/* Hero section (banner) styles */
+.hero {
+  position: relative;
+  color: white;
+  height: 448px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero__contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  height: 190px;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.hero__description {
+  width: 45rem;
+  line-height: 1.3;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 360px;
+  height: 80px;
+}
+
+.hero__buttons {
+  display: flex;
+}
+
+.hero__button {
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.hero__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+/* Fading effect for the bottom of the hero section */
+.hero--fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+

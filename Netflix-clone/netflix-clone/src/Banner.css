@@ -1,0 +1,56 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+  }
+  
+  .banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner__content {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 20px; /* Adjust the distance from the left */
+    color: white;
+  }
+  
+  .banner__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner__description {
+    font-size: 1rem;
+    max-width: 400px; /* Adjust the maximum width of the description */
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  
+  .banner__buttons {
+    margin-top: 1rem;
+  }
+  
+  .banner__button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .banner__button:hover {
+    background-color: #ff0a16;
+  }
+  
